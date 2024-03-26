@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIEHACK 5.0</title>
+
+    <!-- Favicon -->
+    <link href="css/img/favicon_new.png" rel="icon">
+
+    <!-- Google Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- preloader div -->
+  <div id="preloader"></div>
+
+  <!-- <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+</div> -->
+
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg roboto-regular d-flex">
+        <div class="container-fluid" style="opacity: 1;">
+          <a href="index.html" class="navbar-brand">
+            <img id="wiehack_logo" src="css/img/wiehackLogo.png" alt="Image">
+          </a>
+          <a href="https://ieeebvcoe.in/" class="navbar-brand p-0">
+            <img id="ieeebvcoe_logo" src="css/img/ieeebvcoe light.png" alt="Image">
+            <!-- <img style="width: 80px;" src="img/bvpieee_logo.png" alt="Image"> -->
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+      
+          <div class="container-fluid" style="opacity: 1;">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown"> <!-- Dropdown Menu -->
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkAbout" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    About us
+                  </a>
+                  <div class="dropdown-menu navbar-dropdown" aria-labelledby="navbarDropdownMenuLinkAbout">
+                    <a class="dropdown-item pink poppins-semibold" href="index.html#aboutus">About us</a>
+                    <a class="dropdown-item pink poppins-semibold" href="index.html#gallery">Gallery</a>
+                    <a class="dropdown-item pink poppins-semibold" href="./team.html">Team</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"> <!-- Dropdown Menu -->
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkAbout" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Event
+                  </a>
+                  <div class="dropdown-menu navbar-dropdown" aria-labelledby="navbarDropdownMenuLinkAbout">
+                    <a class="dropdown-item pink poppins-semibold" href="index.html#themes">Themes</a>
+                    <a class="dropdown-item pink poppins-semibold" href="index.html#schedule">Schedule</a>
+                    <a class="dropdown-item pink poppins-semibold" href="index.html#sponsors">Sponsors</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="judges&Mentors.html">Judges & Mentors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#faqs">FAQ</a>
+                </li>
+                <li class="nav-item" style="margin-right: 2rem;">
+                  <a class="nav-link" href="index.html#footer">Contact us</a>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-dark pink poppins-semibold login">Login</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Carousel -->
+      <div id="header" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100 hero-bg-image" src="css/img/wiehackvid.gif" alt="Image" data-aos-duration="7000" data-aos-once="true">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <div class="p-2" style="max-width: 900px;">
+                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+                    <div class="row mb-1 d-flex justify-content-center">
+                      <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                        <a href="https://unstop.com/o/bLtWiNh?lb=86ivM4qw" class="btn btn-dark py-md-3 px-md-5" target="_blank">REGISTER</a>
+                      </div>
+                      <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                        <a href="https://drive.google.com/file/d/1EjHSN910TNhKCXYjIWGrWhY3exVCijUr/view" class="btn btn-outline-light py-md-3 px-md-5" target="_blank">Rulebook</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid">
+                      <div class="container py-1">
+                          <div class="row mb-1">
+                              <div class="col-sm-6 d-flex align-items-center justify-content-start">
+                                  <h5 class="mb-3"><i class="fa-regular fa-clock me-3"></i>36 Hours</h5>
+                              </div>
+                              <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                  <h5 class="mb-3" style="margin-left: 2px;"><i class="fa-regular fa-calendar me-3"></i>April 22-23</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- Countdown -->
+      <div class="container-fluid py-4 countdown banner1">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 id="demo" class="display-2 text-center countdown-text zaptron"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- <div class="container-fluid py-4">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12 position-relative d-flex justify-content-center align-items-center">
+                    <img src="css/img/Frame_1.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+                    <h1 class="position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">WIEHack</h1>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    
+      <!-- About -->
+      <div id="aboutus" class="container-fluid py-1">
+        <div class="container py-5">
+          <div class="section-title pb-3 mb-5">
+            <h1><span class="zaptron pink">WIEHack 5.0</span></h1>
+            <h1 class="mb-0 barlow-bold"> Presented by <span class="skyblue">IEEE BVCOE</span></h1>
+          </div>
+          <p class="mb-4" style="font-size: 1.5rem;">  
+            <strong class="pink">WIEHack 5.0</strong>, the fifth iteration of<a href="https://ieeebvcoe.in/"> <strong class="skyblue"> IEEE BVCOE's </strong> </a>flagship event, builds on the legacy of empowering 
+            women in technology since 2018.
+            This 36-hour Women-Centric Hybrid International Hackathon is designed to 
+            give your ideas the time they deserve, encouraging collaboration and learning among participants. WIEHack 
+            aims to address gender disparity in the tech world by requiring that each team have at least 50% female members, 
+            thus creating a supportive environment where ideas can thrive and voices can be heard distinctly. We believe innovation 
+            is fueled by diverse perspectives, which is why WIEHack adopts a hybrid format, welcoming both international and local 
+            participants. Whether you join us virtually or in person, WIEHack offers an immersive experience that promotes collaboration, innovation, and skill display.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Why WIEHACK? -->
+      <div id="aboutus" class="container-fluid py-5 container-color" data-aos="fade-down" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+        <div class="container">
+          <div class="container">
+            <div class="section-title position-relative d-flex justify-content-center align-items-center mx-auto" style="max-width: 600px;" data-aos="slide-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+              <img src="css/Wiehack Heading/why.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+              <h1 class="barlow-bold position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">WHY WIEHack?</h1>
+            </div>
+          </div>
+        
+          
+      
+          <div class="row mx-4">
+            <div class="col-lg-3 mt-5 text-center"  data-aos="fade" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="rounded d-flex align-items-center justify-content-center mb-3 icon">
+                  <i class="fa-solid fa-people-group"></i>
+                </div>
+              </div>
+              <h4 class="mb-0">Beginner Friendly Hackathon</h4>
+              <p class="skyblue">Several mentoring rounds and workshops from industry experts</p>
+            </div>
+      
+            <div class="col-lg-3 mt-5 text-center" data-aos="fade" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+              <div id="image-container" class="d-flex align-items-center justify-content-center image-container">
+                <div class="rounded d-flex align-items-center justify-content-center mb-3 icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+              </div>
+              <h4 class="mb-0">36-Hour Hackathon</h4>
+              <p class="skyblue">Provides ample time to transform your vision into reality</p>
+            </div>
+      
+            <div class="col-lg-3 mt-5 text-center" data-aos="fade" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="rounded d-flex align-items-center justify-content-center mb-3 icon">
+                  <i class="fa-solid fa-venus-mars"></i>
+                </div>
+              </div>
+              <h4 class="mb-0">Women Centric Hackathon</h4>
+              <p class="skyblue">Teams consist of at least 50% women to address gender gap</p>
+            </div>
+      
+            <div class="col-lg-3 mt-5 text-center"  data-aos="fade" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="rounded d-flex align-items-center justify-content-center mb-3 icon">
+                  <i class="fa-solid fa-globe-americas"></i>
+                </div>
+              </div>
+              <h4 class="mb-0">Hybrid International Hackathon</h4>
+              <p class="skyblue">Uniting global minds for boundary-breaking innovation</p>
+            </div>
+          </div>
+        </div>
+      </div>   
+      
+      <!-- Highlights of WIEHack 4.0 -->
+      <div id="aboutus" class="container-fluid py-5 container-color" data-aos="fade-down" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+        <div class="container">
+          <div class="section-title position-relative d-flex justify-content-center align-items-center mx-auto" style="max-width: 600px;" data-aos="slide-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+            <img src="css/Wiehack Heading/highlights.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+            <h1 class="barlow-bold position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; white-space: nowrap;">WIEHack 4.0 HIGHLIGHTS</h1>
+        </div>        
+      
+          <div class="row mx-4">
+            <div class="col-lg-4 mt-5 text-center"  data-aos="fade" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+              <div class="d-flex align-items-center justify-content-center mb-3">
+                <div class="rounded-circle icon d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-trophy"></i> 
+                </div>
+              </div>
+              <h4 class="mb-0">Prize pool worth $50k+</h4>
+              <p class="skyblue">The prize pool ranged over $50,000 for the winning teams which consisted of prize money,
+                vouchers, coupons, subscriptions etc</p>
+            </div>
+      
+            <div class="col-lg-4 mt-5 text-center"  data-aos="fade" data-aos-once="true" data-aos-delay="500" data-aos-duration="500"data-aos-easing="ease-in">
+              <div class="d-flex align-items-center justify-content-center mb-3">
+                <div class="rounded-circle icon d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+              <h4 class="mb-0">44K+ Stream Views</h4>
+              <p class="skyblue">We amassed a total of 44k+ views over all streaming services</p>
+            </div>
+      
+            <div class="col-lg-4 mt-5 text-center"  data-aos="fade" data-aos-once="true" data-aos-delay="500" data-aos-duration="500"data-aos-easing="ease-in">
+              <div class="d-flex align-items-center justify-content-center mb-3">
+                <div class="rounded-circle icon d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+              </div>
+              <h4 class="mb-0">Over 1650+ Registrations</h4>
+              <p class="skyblue">The previous edition of WIEHack saw over 1650+ students join in, from various parts of India
+                and 11+ countries of the world</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+      <!-- Gallery -->
+      <div id="gallery" class="container-fluid py-1 pt-5">
+        <div class="section-title position-relative d-flex justify-content-center align-items-center mx-auto mb-5" style="max-width: 600px;" data-aos="slide-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+          <img src="css/Wiehack Heading/gallery.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+          <h1 class="barlow-bold position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">GALLERY</h1>
+        </div>
+        <div class="p-1 row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col my-2">
+            <div class="section-title text-center position-relative mb-2 mx-auto" style="max-width: 600px;">
+              <h4 class="mb-0 roboto-regular pink">WIEHack 1.0</h4>
+            </div>
+            <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img src="css/Gallery/wiehack1_1.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack1_2.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack1_3.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack1_4.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+      
+          <div class="col my-2">
+            <div class="section-title text-center position-relative mb-2 mx-auto" style="max-width: 600px;">
+              <h4 class="mb-0 roboto-regular pink">WIEHack 2.0</h4>
+            </div>
+            <div id="carouselExample2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img src="css/Gallery/wiehack2_1.jpg" class="d-block w-100 rounded" alt="img1">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack2_2.jpg" class="d-block w-100 rounded" alt="img2">
+                </div>
+                
+              </div>
+              <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExample2" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+      
+          <div class="col my-2">
+            <div class="section-title text-center position-relative mb-2 mx-auto" style="max-width: 600px;">
+              <h4 class="mb-0 roboto-regular pink">WIEHack 3.0</h4>
+            </div>
+            <div id="carouselExample3" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img src="css/Gallery/wiehack3_1.png" class="d-block w-100 rounded" alt="img1">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack3_2.png" class="d-block w-100 rounded" alt="img2">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack3_3.png" class="d-block w-100 rounded" alt="img">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack3_4.jpg" class="d-block w-100 rounded" alt="img">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExample3" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExample3" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+      
+          <div class="col my-2">
+            <div class="section-title text-center position-relative mb-2 mx-auto" style="max-width: 600px;">
+              <h4 class="mb-0 roboto-regular pink">WIEHack 4.0</h4>
+            </div>
+            <div id="carouselExample4" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                  <img src="css/Gallery/wiehack4_1.jpeg" class="d-block w-100 rounded" alt="img">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack4_2.jpeg" class="d-block w-100 rounded" alt="img">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack4_3.jpeg" class="d-block w-100 rounded" alt="img">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <img src="css/Gallery/wiehack4_4.jpeg" class="d-block w-100 rounded" alt="img">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExample4" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExample4" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Themes -->
+
+      <div id="themes" class="container-fluid py-1">
+          <div class="container-fluid py-5">
+            <div class="section-title position-relative d-flex justify-content-center align-items-center mx-auto mb-5" style="max-width: 600px;" data-aos="slide-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+              <img src="css/Wiehack Heading/themes.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+              <h1 class="barlow-bold position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">THEMES</h1>
+            </div>
+            <div class="row mx-4 d-flex justify-content-center align-items-center">
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/womensafety.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Empowering women, securing futures with tech-driven safety</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/climatechange.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Harnessing innovation to heal our planet for future generations</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/healthandfitness.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Revitalize your life: tech-powered health and fitness revolution!</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/fintech.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Transforming finance with cutting-edge technology and innovation</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/education.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Unlocking potentials, shaping tomorrow through innovative education</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/cybersecurity.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Securing tomorrow's digital landscape with innovative solutions</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/viksitbharat.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Pioneering the path to a prosperous and sustainable India by 2047: shaping our future
+                      today!</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-4 mt-4 p-3 d-flex justify-content-center align-items-center" style="text-align: center;"
+                data-aos="fade-up" data-aos-once="true" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="card card-themes" style="width: 18rem;">
+                  <img src="css/Themes/openinnovation.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Bridging minds, shaping futures: where collaboration meets creativity</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <!-- Schedule -->
+      <div id="schedule" class="container-fluid py-4">
+        <div class="container-fluid py-1">
+          <div class="section-title position-relative d-flex justify-content-center align-items-center mx-auto" style="max-width: 600px;" data-aos="slide-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+            <img src="css/Wiehack Heading/schedule.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+            <h1 class="barlow-bold position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">SCHEDULE</h1>
+          </div>
+          <div class="row mx-4">
+            <div class="d-flex flex-column justify-content-center align-items-center col mt-3 p-3">
+              <div class="d-flex justify-content-center" data-aos="fade" data-aos-once="true" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease-in">
+                <div class="p-2">
+                  <h2 class="pink barlow-bold-italic">Coming Soon!!</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sponsors -->
+      <div id="sponsors" class="container-fluid py-1">
+        <div class="section-title position-relative d-flex justify-content-center align-items-center mx-auto" style="max-width: 600px;" data-aos="slide-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+          <img src="css/Wiehack Heading/sponsors.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+          <h1 class="barlow-bold position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">SPONSORS</h1>
+        </div>
+        <div class="row mx-4">
+          <div class="d-flex flex-column justify-content-center align-items-center col mt-3 p-3">
+            <div class="d-flex justify-content-center" data-aos="fade" data-aos-once="true" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease-in">
+              <div class="p-2">
+                <h2 class="pink barlow-bold-italic">Coming Soon!!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Past Sponsors -->
+      <div id="pastSponsors" class="container-fluid px-2 mx-2">
+        <div class="container py-5">
+          <div class="section-title position-relative d-flex justify-content-center align-items-center mx-auto" style="max-width: 600px;" data-aos="slide-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+            <img src="css/Wiehack Heading/past sponsors.png" class="img-fluid position-absolute" alt="Responsive image" style="z-index: -1;">
+            <h1 class="barlow-bold position-absolute text-white" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; white-space: nowrap;">PAST SPONSORS</h1>
+          </div>        
+        </div>
+        <div class="row px-5 d-flex justify-content-center align-items-center flex-wrap" data-aos="fade" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+          <div class="col d-flex justify-content-center align-items-center sponsor-container py-4 mx-4">
+            <img src="css/pastSponsors/sponsors1.png" class="img-fluid" alt="Image 1">
+          </div>
+          <div class="col d-flex justify-content-center align-items-center sponsor-container py-4 mx-4">
+            <img src="css/pastSponsors/sponsors2.png" class="img-fluid" alt="Image 2">
+          </div>
+          <div class="col d-flex justify-content-center align-items-center sponsor-container py-4 mx-4">
+            <img src="css/pastSponsors/sponsors3.png" class="img-fluid" alt="Image 3">
+          </div>
+          <div class="col d-flex justify-content-center align-items-center sponsor-container py-4 mx-4">
+            <img src="css/pastSponsors/sponsors4.png" class="img-fluid" alt="Image 4">
+          </div>
+          <div class="col d-flex justify-content-center align-items-center sponsor-container py-4 mx-4">
+            <img src="css/pastSponsors/sponsors5.png" class="img-fluid" alt="Image 5">
+          </div>
+          <div class="col d-flex justify-content-center align-items-center sponsor-container py-4 mx-4">
+            <img src="css/pastSponsors/sponsors6.png" class="img-fluid" alt="Image 6">
+          </div>
+        </div>
+
+        <p style="text-align: center;font-size: 20px;margin-top: 25px;">Interested in sponsoring us? Reach us at <a id="mail" href="mailto:wiehack5@gmail.com" style="font-weight: bold;" class="pink">wiehack5@gmail.com </a> </p>
+      </div>
+
+      <!-- Location -->
+      <div class="container-fluid py-1" data-aos="fade" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+        <div class="row justify-content-center">
+          <div class="col-14 col-lg-7 my-4">
+            <div class="card location">
+      
+              <!-- REMARK the PHONE  -->
+              <div class="row g-0">
+                <div class="col-lg-5 px-5" style="padding-top: 6rem;">
+                  <div class="card phone">
+                    <div class="screen-up d-flex justify-content-center align-items-center">
+                      <div class="speaker"></div>
+                    </div>
+                    <div class="screen">
+                      <!-- Your phone screen content goes here -->
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.460592169637!2d77.11101821501003!3d28.6758655824007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d038e0dee2897%3A0x84bb3fed8b1c51f9!2sBharati%20Vidyapeeth&#39;s%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1678729758015!5m2!1sen!2sin"  style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="screen-tab d-flex justify-content-center align-items-center">
+                      <div class="btn">B</div>
+                      <div class="btn">V</div>
+                      <div class="btn">C</div>
+                      <div class="btn">O</div>
+                      <div class="btn">E</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-center p-2">
+                    <a href="https://www.google.com/maps/place/Bharati+Vidyapeeth's+College+of+Engineering/@28.6730515,77.110675,16z/data=!4m6!3m5!1s0x390d038e0dee2897:0x84bb3fed8b1c51f9!8m2!3d28.6758656!4d77.1132069!16zL20vMGdycjdy?hl=en&entry=ttu" 
+                    type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-location-dot"></i>
+                      Location</a>
+                    <h2 class="card-title poppins-semibold text-white">Bharati Vidyapeeth's College of Engineering</h2>
+                    <h4 class="card-text roboto-regular text-white">Landmark: Near Paschim Vihar East, Metro Station</h4>
+                    <h3 class="card-text poppins-semibold skyblue"><i class="fa-regular fa-calendar me-3"></i>Date: 22/04/24</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQS -->
+      <div id="faqs" class="container-fluid pt-4 mt-5">
+        <div class="section-title text-center position-relative pb-3 mx-auto" style="max-width: 600px;" data-aos="fade-down" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+          <h1 class="mb-0 text-uppercase barlow-bold">FAQ</h1>
+        </div>
+        <div class="container mx-auto mb-4 px-5 pb-5" data-aos="fade" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in">
+          <div class="accordion" id="accordionExample">
+            <!-- Accordion Item #1 -->
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  How many members can be in a team ?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse ans" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Teams for WIEHack 5.0 can have 1-4 members and male students can also be part of the team provided minimum 50% are female members in a team.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item #2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How can one register for the offline mode?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse ans" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  To register for the offline mode, participants can choose the option during registration on Unstop. However, please note that only 70 teams will be accommodated offline on a first-come, first-served basis. The remaining teams are encouraged to join us through the online mode.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item #3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Will travel expenses for offline participants be covered by the organizers?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse ans" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  No, participants will be responsible for their own travel expenses to attend offline.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item #4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How will online participants engage in WIEHack 5.0?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse ans" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Online participation will be facilitated via Discord. A link to the Discord server will be shared a few days prior to the event, providing a platform for collaboration, communication, and support throughout the hackathon.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item #5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How many rounds will be there ?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse ans" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  The event will have four rounds : Abstract Round, Prototype & Presentation Round, Business Plan Round and Final Round. 
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item #6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  What are all the themes for this hackathon ?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse ans" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  There are total of 8 themes. Teams can choose any of these themes :
+                  <ul>
+                    <li>Women Safety</li>
+                    <li>Climate Change and Sustainability</li>
+                    <li>Health and fitness</li>
+                    <li>FinTech</li>
+                    <li>Education and Skill Development</li>
+                    <li>Cybersecurity</li>
+                    <li>Viksit Bharat @2047: Building the solid foundation of a developed India</li>
+                    <li>Open innovation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item #7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Is there any restriction on programming language or platform used for product ?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse ans" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  There is no restriction on the programming languages and platforms used to develop the product.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item #8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed ques" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  What are the benefits of participating in WIEHack 5.0?
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse ans" aria-labelledby="headingNine"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Participating in WIEHack 5.0 offers networking opportunities with industry experts and peers, exciting goodies, certificates of participation, and the chance to win cash prizes for the winners.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <footer id="footer" class="footer d-flex align-items-center justify-content-center">
+          <div class="container p-1 ">
+            <div class="row">
+              <div class="col-3 p-1 d-flex align-items-center justify-content-center">
+                <a href="index.html"><img id="wiehack_logo" src="css/img/wiehackLogo.png" alt="logo"/></a>
+              </div>
+              <div class="col-6 p-1 d-flex flex-column align-items-center justify-content-center">
+                <h5>Designed with ❤️ by<a href="team.html" class="pink"> Team WIEHack5.0</a></h5>
+                <h6>Connect with us on <a href="mailto:wiehack5@gmail.com" class="pink">wiehack5@gmail.com </a></h6>
+              </div>
+              <div class="col-3 p-1 d-flex flex-column align-items-center justify-content-center">
+                <div class="icons-footer">
+                  <a href="https://www.linkedin.com/company/ieee-bvcoe/"><i class="fa-brands fa-linkedin footer-icons"></i></a>
+                  <a href="https://www.facebook.com/share/hybPV4CmKpiVQS7J/?mibextid=qi2Omg"><i class="fab fa-facebook footer-icons"></i></a>
+                  <a href="https://www.instagram.com/ieeebvcoe?igsh=MWttcWkwOHRudjMzZA=="><i class="fab fa-instagram footer-icons"></i></a>
+                  <a href="https://youtube.com/@IEEEBVCOE?si=eoOEVZW_Wkb2WCVk"><i class="fab fa-youtube footer-icons"></i></a>
+                </div>
+                <p class="skyblue">Sriti : +91 9650905574</p>
+                <!-- Back to Top -->
+                <a href="#" onclick="scrollToTop" class="btn btn-lg btn-lg-square rounded back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+              </div> 
+            </div>
+          </div>
+      </footer>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>  
+    <script src="js/animation.js"></script>
+    <script src="js/countdown.js"></script>
+
+    <!-- preloader script -->
+    <script> 
+      document.addEventListener("DOMContentLoaded", function() {
+        var loader = document.getElementById("preloader");
+        loader.style.display = "none";
+      });
+    </script>
+</body>
+</html>
