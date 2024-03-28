@@ -6,10 +6,6 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  /* background-image: url('img/background2.jpeg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; */
   width: calc(100vw - 17px);
   overflow-y: scroll; /* Enable vertical scrolling */
   color: #ffffff;
@@ -63,10 +59,7 @@ border-radius: 10px; /* Set the radius of the scrollbar thumb */
 /* logo end */
 
 .navbar {
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1000;
     animation: slideDown 0.8s ease-in-out;
 }
 
@@ -163,7 +156,6 @@ p {
 
 /* countdown start */
 .countdown {
-  background: linear-gradient(90deg, rgba(111,0,68,1) 10%, rgba(70,0,43,1) 30%, rgba(36,36,93,1) 100%);
   opacity: 1;
 }
 
@@ -175,27 +167,13 @@ p {
 }
 
 .banner1 {
-  width: 100%;
+    width: 100%;
     max-width: 100vw;
     margin: 0 auto;
     background-image: url('img/Frame_1.png');
     background-size: cover;
     background-position: center;
     padding: 20px;
-}
-
-.banner1 {
-  width: 100%;
-  max-width: 100vw;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center; /* Align the image horizontally */
-}
-
-.container-fluid.banner1 {
-  background-image: url('img/Frame_1.png'); /* Path to your image */
-  background-size: cover;
-  background-position: center;
 }
 
 /* countdown end */
@@ -599,6 +577,13 @@ p {
   font-style: italic;
 }
 
+.allerta-stencil-regular {
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 /* Animations */
 .image-container {
@@ -626,4 +611,30 @@ p {
 
 .zaptron {
   font-family: 'Zaptron', sans-serif;
+}
+
+/* carousel */
+@media only screen and (max-width: 1200px) {
+  #cont {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #cont2 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .count {
+    font-size: 2rem;
+  }
+}
+
+.ndtext {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
 }
