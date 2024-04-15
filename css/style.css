@@ -319,8 +319,8 @@ p {
 
 /* Sponsors start*/
 .sponsor-container {
-  background-color: #FFA7FF;
-  border-radius: 1rem;
+  background-color: black;
+  /* border-radius: 1rem; */
   transition: all 0.2s ease-out;
 }
 
