@@ -267,6 +267,7 @@ p {
 }
 /* location end */
 
+
 /* theme start*/
 .card-themes {
   background-color: #000000;
@@ -614,19 +615,32 @@ p {
 }
 
 /* carousel */
-@media only screen and (max-width: 1200px) {
-  #cont {
-    display: none;
-    visibility: hidden;
+ @media only screen and (max-width: 1200px) {
+  .btnnnn{
+    
+    position: relative;
+    top: 10px;
+    left: 5px;
+  }
+  .ggg{
+    font-size: 15px;
+    position: relative;
+    left: 15px;
+    width: 150px;
+  }
+  .gggg{
+    position: relative;
+    right: 10px;
+    font-size: 15px;
   }
 }
 
-@media only screen and (min-width: 1201px) {
+/* @media only screen and (min-width: 1201px) {
   #cont2 {
     display: none;
     visibility: hidden;
   }
-}
+}  */
 
 @media only screen and (max-width: 520px) {
   .count {
