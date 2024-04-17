@@ -178,6 +178,11 @@ img {
     animation: animatedgradient 3s ease alternate infinite;
     background-size: 300% 300%;
 }
+@media screen and (max-width: 760px) {
+  .prizes {
+    margin-top: 15px;
+  }
+}
 
 
 .tops{
